@@ -42,13 +42,38 @@ DSPToolkit is a passion project born from my journey as a 3rd-year ECE student a
 
 - **Digital Filtering**
   ```python
-  # Apply a low-pass filter
-  filtered = filters.low_pass(signal, cutoff=1000)
+  # Apply different types of filters
+  # Low-pass filter
+  filtered_low = filters.low_pass(signal, cutoff=1000)
+  
+  # High-pass filter
+  filtered_high = filters.high_pass(signal, cutoff=500)
+  
+  # Band-pass filter
+  filtered_band = filters.band_pass(signal, low_cutoff=500, high_cutoff=1000)
+  
+  # Moving average filter
+  filtered_ma = filters.moving_average(signal, window_size=5)
   ```
-  - FIR and IIR implementations
-  - Low-pass, high-pass, band-pass filters
-  - Moving average filters
-  - Custom filter design capabilities
+  - **FIR Filters**:
+    - Moving Average
+    - Windowed-Sinc
+    - Hamming Window
+    - Blackman Window
+  - **IIR Filters**:
+    - Butterworth
+    - Chebyshev Type I & II
+    - Elliptic (Cauer)
+  - **Filter Types**:
+    - Low-pass: Remove high frequencies
+    - High-pass: Remove low frequencies
+    - Band-pass: Keep specific frequency range
+    - Band-stop: Remove specific frequency range
+  - **Advanced Features**:
+    - Custom filter design
+    - Zero-phase filtering
+    - Filter coefficient optimization
+    - Group delay compensation
 
 - **Transform Operations**
   ```python
