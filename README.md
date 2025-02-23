@@ -8,7 +8,7 @@
 
 A powerful Digital Signal Processing library built by a student, for students.
 
-[Key Features](#features) •
+[Features](#features) •
 [Installation](#installation) •
 [Quick Start](#quick-start) •
 [Documentation](#documentation) •
@@ -18,12 +18,12 @@ A powerful Digital Signal Processing library built by a student, for students.
 
 ## 🌟 Overview
 
-DSPToolkit is a passion project born from my journey as a self-taught programmer and 3rd-year ECE student at ITER, SOA University. It provides a secure, efficient, and educational platform for signal processing tasks, combining theoretical concepts with practical implementations.
+DSPToolkit is a passion project born from my journey as a 3rd-year ECE student and self-taught programmer. It combines theoretical concepts from my ongoing studies with practical implementations I've learned through self-study, creating a bridge between classroom learning and real-world applications.
 
 ### Why DSPToolkit?
 - 🎓 Built with students in mind
 - 🔒 Security-first approach
-- 📊 Comprehensive signal analysis tools
+- 📊 Comprehensive signal analysis
 - 🚀 Easy to learn, ready for real projects
 - 💡 Well-documented with examples
 
@@ -36,7 +36,8 @@ DSPToolkit is a passion project born from my journey as a self-taught programmer
   signal = generator.sine(freq=440, duration=1.0)
   ```
   - Sine, square, and chirp signals
-  - Customizable parameters
+  - Customizable waveform parameters
+  - Precise frequency control
   - Noise generation (white, pink)
 
 - **Digital Filtering**
@@ -45,17 +46,31 @@ DSPToolkit is a passion project born from my journey as a self-taught programmer
   filtered = filters.low_pass(signal, cutoff=1000)
   ```
   - FIR and IIR implementations
-  - Various filter types
-  - Custom filter design
+  - Low-pass, high-pass, band-pass filters
+  - Moving average filters
+  - Custom filter design capabilities
 
 - **Transform Operations**
   ```python
   # Perform FFT analysis
   spectrum = transforms.fft(signal)
   ```
-  - FFT and STFT
-  - Spectral analysis
+  - Fast Fourier Transform (FFT)
+  - Short-Time Fourier Transform (STFT)
+  - Spectral analysis tools
   - Time-frequency analysis
+
+### 🔒 Security Features
+- Parameter validation and sanitization
+- Secure random number generation
+- Memory-safe operations
+- Signal integrity verification
+
+### 📊 Analysis Tools
+- Time domain analysis
+- Frequency domain analysis
+- System response evaluation
+- Signal quality assessment
 
 ## 🛠 Installation
 
@@ -93,39 +108,49 @@ spectrum = analyzer.get_frequency_spectrum(clean_signal)
 3. [System Analysis](examples/system_analysis.py)
 4. [Secure Processing](examples/secure_signal_processing.py)
 
-### Project Structure
-```
-DSPToolkit/
-├── src/               # Core functionality
-├── examples/          # Usage examples
-├── tests/            # Unit tests
-└── docs/            # Documentation
-```
+### Use Cases
+1. **Audio Processing**
+   - Noise reduction
+   - Signal filtering
+   - Frequency analysis
 
-## 💻 Requirements
-- Python 3.8+
-- NumPy
-- SciPy
-- Matplotlib
-- pytest
+2. **Learning Tool**
+   - Hands-on DSP implementation
+   - Interactive examples
+   - Practical signal analysis
+   - Security considerations in DSP
 
-## 🤝 Contributing
-Contributions are welcome! Whether you're:
-- 🐛 Fixing bugs
-- ✨ Adding features
-- 📚 Improving documentation
-- 🔍 Reporting issues
-
-Check out our [Contributing Guidelines](CONTRIBUTING.md).
+## 💻 Technical Stack
+- **Core**: Python 3.8+
+- **Scientific Computing**: NumPy, SciPy
+- **Visualization**: Matplotlib
+- **Testing**: pytest
 
 ## 👤 About Me
-Hi! I'm Pratyush Padhi, currently a 3rd-year ECE student passionate about:
+Hi! I'm Pratyush Padhi, a 3rd-year ECE student at ITER, SOA University, passionate about:
 - Signal Processing
 - Cybersecurity
 - Self-taught Programming
 - Audio Processing
 
-## 📫 Connect
+This project represents my learning journey, combining:
+- Classroom knowledge from ECE courses
+- Self-taught programming skills
+- Independent research
+- Practical implementation experience
+
+## 🚀 Future Goals
+As I continue my studies and learning:
+- Real-time processing implementation
+- GUI development
+- More filter types
+- Enhanced security features
+- Performance optimization
+
+## 🤝 Contributing
+Fellow students and developers are welcome to contribute! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## 📫 Contact
 - GitHub: [pratyush295300](https://github.com/pratyush295300)
 - Email: pratyushpadhi04@gmail.com
 
@@ -135,6 +160,6 @@ This project is [MIT](LICENSE) licensed.
 ---
 <div align="center">
 Made with ❤️ by Pratyush Padhi
-</div>
 
-#StudentDeveloper #SignalProcessing #Python #DSP
+#StudentDeveloper #SignalProcessing #Python #DSP #ECE #LearningInPublic
+</div>
